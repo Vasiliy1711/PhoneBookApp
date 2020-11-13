@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">PhoneBookApp</string>
+    <string name="add_phone_number">Введите номер телефона</string>
+    <string name="add_name">Введите имя</string>
+    <string name="add_surname">Введите фамилию</string>
+    <string name="add">Добавить</string>
+    <string name="name">Имя</string>
+    <string name="phone_number">номер телефона</string>
+    <string name="surname">Фамилия</string>
 </resources>

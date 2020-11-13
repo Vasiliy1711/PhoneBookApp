@@ -1,5 +1,7 @@
 package com.example.phonebookapp.common;
 
-public class BaseActivity
+import androidx.appcompat.app.AppCompatActivity;
+
+public class BaseActivity extends AppCompatActivity
 {
 }

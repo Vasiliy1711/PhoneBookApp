@@ -12,18 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:inputType="textPersonName"
-        android:hint="Введите фамилию"
+        android:hint="@string/add_surname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextAddName2"
+        android:id="@+id/editTextAddName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:inputType="textPersonName"
-        android:hint="Введите имя"
+        android:hint="@string/add_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextAddSurname" />
@@ -34,16 +34,16 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:inputType="textPersonName"
-        android:hint="Введите номер телефона"
+        android:hint="@string/add_phone_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddName" />
 
     <Button
         android:id="@+id/buttonAddContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добавить"
+        android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
