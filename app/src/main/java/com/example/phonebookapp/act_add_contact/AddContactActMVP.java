@@ -15,6 +15,5 @@ public interface AddContactActMVP
     interface Presenter
     {
         void onButtonAddClicked();
-        void setContact(Contact contact);
     }
 }
