@@ -47,4 +47,25 @@ public class AddContactActMVPView implements AddContactActMVP.MVPView
     {
         this.presenter = presenter;
     }
+
+    @Override
+    public String getSurname()
+    {
+        String surname = editTextAddSurname.getText().toString().trim();
+        return surname;
+    }
+
+    @Override
+    public String getName()
+    {
+        String name = editTextAddName.getText().toString().trim();
+        return name;
+    }
+
+    @Override
+    public String getPhoneNumber()
+    {
+        String phoneNumber = editTextAddPhoneNumber.getText().toString().trim();
+        return phoneNumber;
+    }
 }
