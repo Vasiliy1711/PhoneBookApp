@@ -1,16 +1,19 @@
 package com.example.phonebookapp.act_edit_contact;
 
 import com.example.phonebookapp.common.BaseActMVP;
+import com.example.phonebookapp.data.Contact;
 
-public interface EditContactActMVP extends BaseActMVP
+public interface EditContactActMVP
 {
-    interface MVPView
+    interface MVPView extends BaseActMVP<Presenter>
     {
-
+        void setContact(Contact contact);
     }
 
     interface Presenter
     {
+        void editContact(Contact contact);
 
+        void deleteContact(Contact contact);
     }
 }

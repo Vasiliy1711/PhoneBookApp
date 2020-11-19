@@ -30,4 +30,9 @@ public abstract class ContactsDatabase extends RoomDatabase
     }
 
     public abstract ContactsDao contactsDao();
+
+    public int getIdOfContact(Contact contact)
+    {
+        return contact.getId();
+    }
 }

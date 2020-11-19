@@ -11,7 +11,6 @@ import com.example.phonebookapp.data.Contact;
 public class AddContactActivity extends BaseActivity implements AddContactActMVP.Presenter
 {
     private AddContactActMVP.MVPView mvpView;
-    private Contact contact;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,9 +25,12 @@ public class AddContactActivity extends BaseActivity implements AddContactActMVP
     @Override
     public void onButtonAddClicked()
     {
-        contact = new Contact(mvpView.getSurname(), mvpView.getName(), mvpView.getPhoneNumber());
-        contactsDatabase.contactsDao().insertContact(contact);
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        Contact contact = mvpView.getContact();
+        if (contact != null)
+        {
+            contactsDatabase.contactsDao().insertContact(contact);
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
     }
 }

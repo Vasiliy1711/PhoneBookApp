@@ -37,7 +37,7 @@ public class MainActMVPView extends BaseActMVPView implements MainActMVP.MVPView
             public void onContactClicked(int position)
             {
                 contacts = adapter.getContacts();
-                Contact contact = contacts.get(position);
+                contact = contacts.get(position);
                 presenter.onContactItemClicked(contact);
             }
         });
@@ -68,6 +68,5 @@ public class MainActMVPView extends BaseActMVPView implements MainActMVP.MVPView
     public void showContacts(List<Contact> contacts)
     {
         adapter.setContacts(contacts);
-
     }
 }

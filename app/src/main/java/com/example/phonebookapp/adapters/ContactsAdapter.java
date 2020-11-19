@@ -30,8 +30,8 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
 
     private List<Contact> contacts;
     private Contact contact;
-    public ContactsViewHolder holder;
-    private View view;
+
+
 
 
     public ContactsAdapter()
@@ -54,7 +54,7 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
     @Override
     public ContactsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
-        view = LayoutInflater.from(parent.getContext()).inflate(R.layout.contact_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.contact_item, parent, false);
         return new ContactsViewHolder(view);
     }
 

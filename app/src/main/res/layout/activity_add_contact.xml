@@ -7,7 +7,7 @@
     tools:context=".act_add_contact.AddContactActivity">
 
     <EditText
-        android:id="@+id/editTextAddSurname"
+        android:id="@+id/editTextEditSurname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextAddName"
+        android:id="@+id/editTextEditName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -26,10 +26,10 @@
         android:hint="@string/add_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddSurname" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditSurname" />
 
     <EditText
-        android:id="@+id/editTextAddPhoneNumber"
+        android:id="@+id/editTextEditPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -37,15 +37,15 @@
         android:hint="@string/add_phone_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditName" />
 
     <Button
-        android:id="@+id/buttonAddContact"
+        android:id="@+id/buttonSaveContact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAddPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEditPhoneNumber" />
 </androidx.constraintlayout.widget.ConstraintLayout>

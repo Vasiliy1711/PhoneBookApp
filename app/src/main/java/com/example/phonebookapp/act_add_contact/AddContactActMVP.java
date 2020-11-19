@@ -7,9 +7,7 @@ public interface AddContactActMVP
 {
     interface MVPView extends BaseActMVP<Presenter>
     {
-        String getSurname();
-        String getName();
-        String getPhoneNumber();
+        Contact getContact();
     }
 
     interface Presenter

@@ -7,4 +7,6 @@
     <string name="name">Имя</string>
     <string name="phone_number">номер телефона</string>
     <string name="surname">Фамилия</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
 </resources>
